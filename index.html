@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Puerta</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        button {
+            background-color: #5F7D8C; /* Color gris arduino */
+            color: white;
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4e6872;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="abrirPuerta()">ABRIR</button>
+
+    <script>
+        function abrirPuerta() {
+            fetch('https://tu-url-aqui.com/abrir-puerta');
+            // No se maneja la respuesta, solo se envía la petición
+        }
+    </script>
+</body>
+</html>
